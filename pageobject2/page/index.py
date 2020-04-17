@@ -9,7 +9,7 @@ class Index(BasePage):
     def goto_add_member(self):
         self.driver.get("https://work.weixin.qq.com/wework_admin/frame")
         self.driver.find_element(By.CSS_SELECTOR,'.index_service_cnt_item_title').click()
-        return AddMember(self.driver)
+        return AddMember(self.driver)#实例化AddMember
     def imporrt_address(self):
         pass
     def member_join(self):
